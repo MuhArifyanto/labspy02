@@ -1,11 +1,13 @@
-bilangan1 = float(input("masukan bilangan pertama:"))
-bilangan2 = float(input("masukan bilangan kedua:"))
-bilangan3 = float(input("masukan bilangan ketiga:"))
+# Minta pengguna untuk memasukkan dua bilangan
+bilangan1 = int(input("Masukkan bilangan pertama: "))
+bilangan2 = int(input("Masukkan bilangan kedua: "))
 
-if bilangan1 >= bilangan2 and bilangan1 >= bilangan3:
-    bilangan_terbesar = bilangan1
-if bilangan1 >= bilangan1 and bilangan2 >= bilangan3:
+# Inisialisasi variabel untuk bilangan terbesar
+bilangan_terbesar = bilangan1
+
+# Periksa apakah bilangan kedua lebih besar dari bilangan_terbesar
+if bilangan2 > bilangan_terbesar:
     bilangan_terbesar = bilangan2
-else :
-    bilangan_terbesar = bilangan3
-print("bilangan terbesar adalah:", bilangan_terbesar)
+
+# Tampilkan bilangan terbesar
+print("Bilangan terbesar adalah:", bilangan_terbesar)
